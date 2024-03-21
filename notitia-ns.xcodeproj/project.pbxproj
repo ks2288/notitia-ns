@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9670C742BACC68900A79071 /* notitia_ns.docc in Sources */ = {isa = PBXBuildFile; fileRef = B9670C732BACC68900A79071 /* notitia_ns.docc */; };
+		B9670C7A2BACC68A00A79071 /* notitia_ns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9670C6F2BACC68900A79071 /* notitia_ns.framework */; };
+		B9670C7F2BACC68A00A79071 /* notitia_nsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C7E2BACC68A00A79071 /* notitia_nsTests.swift */; };
+		B9670C802BACC68A00A79071 /* notitia_ns.h in Headers */ = {isa = PBXBuildFile; fileRef = B9670C722BACC68900A79071 /* notitia_ns.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9670C8B2BACC7F400A79071 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B9670C8A2BACC7F400A79071 /* Realm */; };
+		B9670C8D2BACC7F400A79071 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B9670C8C2BACC7F400A79071 /* RealmSwift */; };
+		B9670C8F2BACC99800A79071 /* NotitiaDataAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C8E2BACC99800A79071 /* NotitiaDataAccessor.swift */; };
+		B9670C932BACD28C00A79071 /* RealmManagerNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C902BACD28C00A79071 /* RealmManagerNS.swift */; };
+		B9670C952BACD28C00A79071 /* NotitiaBaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C922BACD28C00A79071 /* NotitiaBaseStore.swift */; };
+		B9670C9B2BACD60C00A79071 /* BaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C992BACD60C00A79071 /* BaseStore.swift */; };
+		B9670C9C2BACD60C00A79071 /* RealmOptional+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C972BACD60C00A79071 /* RealmOptional+Helpers.swift */; };
+		B9670C9D2BACD60C00A79071 /* CustomAddOrUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C9A2BACD60C00A79071 /* CustomAddOrUpdate.swift */; };
+		B9670C9E2BACD60C00A79071 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C962BACD60C00A79071 /* RealmManager.swift */; };
+		B9670C9F2BACD60C00A79071 /* Realm+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670C982BACD60C00A79071 /* Realm+Helper.swift */; };
+		B9670CA22BACD78200A79071 /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = B9670CA12BACD78200A79071 /* ObjcExceptionBridging */; };
+		B9670CA42BACD78200A79071 /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = B9670CA32BACD78200A79071 /* XCGLogger */; };
+		B9670CA62BACD7CA00A79071 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670CA52BACD7CA00A79071 /* Logger.swift */; };
+		B9670CA82BACD84B00A79071 /* LoggerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9670CA72BACD84B00A79071 /* LoggerHelper.swift */; };
+		B9670CF52BACF65300A79071 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B9670CF42BACF65300A79071 /* .gitignore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9670C7B2BACC68A00A79071 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9670C662BACC68900A79071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9670C6E2BACC68900A79071;
+			remoteInfo = "notitia-ns";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9670C6F2BACC68900A79071 /* notitia_ns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = notitia_ns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9670C722BACC68900A79071 /* notitia_ns.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = notitia_ns.h; sourceTree = "<group>"; };
+		B9670C732BACC68900A79071 /* notitia_ns.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = notitia_ns.docc; sourceTree = "<group>"; };
+		B9670C792BACC68A00A79071 /* notitia-nsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "notitia-nsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9670C7E2BACC68A00A79071 /* notitia_nsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notitia_nsTests.swift; sourceTree = "<group>"; };
+		B9670C8E2BACC99800A79071 /* NotitiaDataAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotitiaDataAccessor.swift; sourceTree = "<group>"; };
+		B9670C902BACD28C00A79071 /* RealmManagerNS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManagerNS.swift; sourceTree = "<group>"; };
+		B9670C922BACD28C00A79071 /* NotitiaBaseStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotitiaBaseStore.swift; sourceTree = "<group>"; };
+		B9670C962BACD60C00A79071 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		B9670C972BACD60C00A79071 /* RealmOptional+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealmOptional+Helpers.swift"; sourceTree = "<group>"; };
+		B9670C982BACD60C00A79071 /* Realm+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Helper.swift"; sourceTree = "<group>"; };
+		B9670C992BACD60C00A79071 /* BaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseStore.swift; sourceTree = "<group>"; };
+		B9670C9A2BACD60C00A79071 /* CustomAddOrUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddOrUpdate.swift; sourceTree = "<group>"; };
+		B9670CA52BACD7CA00A79071 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		B9670CA72BACD84B00A79071 /* LoggerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerHelper.swift; sourceTree = "<group>"; };
+		B9670CF42BACF65300A79071 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9670C6C2BACC68900A79071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9670C8D2BACC7F400A79071 /* RealmSwift in Frameworks */,
+				B9670C8B2BACC7F400A79071 /* Realm in Frameworks */,
+				B9670CA22BACD78200A79071 /* ObjcExceptionBridging in Frameworks */,
+				B9670CA42BACD78200A79071 /* XCGLogger in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9670C762BACC68A00A79071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9670C7A2BACC68A00A79071 /* notitia_ns.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9670C652BACC68900A79071 = {
+			isa = PBXGroup;
+			children = (
+				B9670CF42BACF65300A79071 /* .gitignore */,
+				B9670C712BACC68900A79071 /* notitia-ns */,
+				B9670C7D2BACC68A00A79071 /* notitia-nsTests */,
+				B9670C702BACC68900A79071 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9670C702BACC68900A79071 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9670C6F2BACC68900A79071 /* notitia_ns.framework */,
+				B9670C792BACC68A00A79071 /* notitia-nsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9670C712BACC68900A79071 /* notitia-ns */ = {
+			isa = PBXGroup;
+			children = (
+				B9670CA52BACD7CA00A79071 /* Logger.swift */,
+				B9670CA72BACD84B00A79071 /* LoggerHelper.swift */,
+				B9670C922BACD28C00A79071 /* NotitiaBaseStore.swift */,
+				B9670C902BACD28C00A79071 /* RealmManagerNS.swift */,
+				B9670CF32BACF04000A79071 /* Core */,
+				B9670C732BACC68900A79071 /* notitia_ns.docc */,
+				B9670C722BACC68900A79071 /* notitia_ns.h */,
+			);
+			path = "notitia-ns";
+			sourceTree = "<group>";
+		};
+		B9670C7D2BACC68A00A79071 /* notitia-nsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9670C7E2BACC68A00A79071 /* notitia_nsTests.swift */,
+			);
+			path = "notitia-nsTests";
+			sourceTree = "<group>";
+		};
+		B9670CF32BACF04000A79071 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B9670C992BACD60C00A79071 /* BaseStore.swift */,
+				B9670C9A2BACD60C00A79071 /* CustomAddOrUpdate.swift */,
+				B9670C8E2BACC99800A79071 /* NotitiaDataAccessor.swift */,
+				B9670C982BACD60C00A79071 /* Realm+Helper.swift */,
+				B9670C962BACD60C00A79071 /* RealmManager.swift */,
+				B9670C972BACD60C00A79071 /* RealmOptional+Helpers.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B9670C6A2BACC68900A79071 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9670C802BACC68A00A79071 /* notitia_ns.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B9670C6E2BACC68900A79071 /* notitia-ns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9670C832BACC68A00A79071 /* Build configuration list for PBXNativeTarget "notitia-ns" */;
+			buildPhases = (
+				B9670C6A2BACC68900A79071 /* Headers */,
+				B9670C6B2BACC68900A79071 /* Sources */,
+				B9670C6C2BACC68900A79071 /* Frameworks */,
+				B9670C6D2BACC68900A79071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "notitia-ns";
+			packageProductDependencies = (
+				B9670C8A2BACC7F400A79071 /* Realm */,
+				B9670C8C2BACC7F400A79071 /* RealmSwift */,
+				B9670CA12BACD78200A79071 /* ObjcExceptionBridging */,
+				B9670CA32BACD78200A79071 /* XCGLogger */,
+			);
+			productName = "notitia-ns";
+			productReference = B9670C6F2BACC68900A79071 /* notitia_ns.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B9670C782BACC68A00A79071 /* notitia-nsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9670C862BACC68A00A79071 /* Build configuration list for PBXNativeTarget "notitia-nsTests" */;
+			buildPhases = (
+				B9670C752BACC68A00A79071 /* Sources */,
+				B9670C762BACC68A00A79071 /* Frameworks */,
+				B9670C772BACC68A00A79071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9670C7C2BACC68A00A79071 /* PBXTargetDependency */,
+			);
+			name = "notitia-nsTests";
+			productName = "notitia-nsTests";
+			productReference = B9670C792BACC68A00A79071 /* notitia-nsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9670C662BACC68900A79071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					B9670C6E2BACC68900A79071 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					B9670C782BACC68A00A79071 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = B9670C692BACC68900A79071 /* Build configuration list for PBXProject "notitia-ns" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9670C652BACC68900A79071;
+			packageReferences = (
+				B9670C892BACC7F400A79071 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				B9670CA02BACD78200A79071 /* XCRemoteSwiftPackageReference "XCGLogger" */,
+			);
+			productRefGroup = B9670C702BACC68900A79071 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9670C6E2BACC68900A79071 /* notitia-ns */,
+				B9670C782BACC68A00A79071 /* notitia-nsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9670C6D2BACC68900A79071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9670CF52BACF65300A79071 /* .gitignore in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9670C772BACC68A00A79071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9670C6B2BACC68900A79071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9670C9F2BACD60C00A79071 /* Realm+Helper.swift in Sources */,
+				B9670C952BACD28C00A79071 /* NotitiaBaseStore.swift in Sources */,
+				B9670C9E2BACD60C00A79071 /* RealmManager.swift in Sources */,
+				B9670C742BACC68900A79071 /* notitia_ns.docc in Sources */,
+				B9670C9B2BACD60C00A79071 /* BaseStore.swift in Sources */,
+				B9670CA62BACD7CA00A79071 /* Logger.swift in Sources */,
+				B9670C9C2BACD60C00A79071 /* RealmOptional+Helpers.swift in Sources */,
+				B9670C9D2BACD60C00A79071 /* CustomAddOrUpdate.swift in Sources */,
+				B9670CA82BACD84B00A79071 /* LoggerHelper.swift in Sources */,
+				B9670C932BACD28C00A79071 /* RealmManagerNS.swift in Sources */,
+				B9670C8F2BACC99800A79071 /* NotitiaDataAccessor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9670C752BACC68A00A79071 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9670C7F2BACC68A00A79071 /* notitia_nsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9670C7C2BACC68A00A79071 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9670C6E2BACC68900A79071 /* notitia-ns */;
+			targetProxy = B9670C7B2BACC68A00A79071 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B9670C812BACC68A00A79071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9670C822BACC68A00A79071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9670C842BACC68A00A79071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4DSA7P57D5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.specter.notitia-ns";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9670C852BACC68A00A79071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4DSA7P57D5;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.specter.notitia-ns";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B9670C872BACC68A00A79071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DSA7P57D5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.specter.notitia-nsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9670C882BACC68A00A79071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4DSA7P57D5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.specter.notitia-nsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9670C692BACC68900A79071 /* Build configuration list for PBXProject "notitia-ns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9670C812BACC68A00A79071 /* Debug */,
+				B9670C822BACC68A00A79071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9670C832BACC68A00A79071 /* Build configuration list for PBXNativeTarget "notitia-ns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9670C842BACC68A00A79071 /* Debug */,
+				B9670C852BACC68A00A79071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9670C862BACC68A00A79071 /* Build configuration list for PBXNativeTarget "notitia-nsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9670C872BACC68A00A79071 /* Debug */,
+				B9670C882BACC68A00A79071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B9670C892BACC7F400A79071 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.48.1;
+			};
+		};
+		B9670CA02BACD78200A79071 /* XCRemoteSwiftPackageReference "XCGLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DaveWoodCom/XCGLogger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B9670C8A2BACC7F400A79071 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9670C892BACC7F400A79071 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		B9670C8C2BACC7F400A79071 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9670C892BACC7F400A79071 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		B9670CA12BACD78200A79071 /* ObjcExceptionBridging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9670CA02BACD78200A79071 /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = ObjcExceptionBridging;
+		};
+		B9670CA32BACD78200A79071 /* XCGLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B9670CA02BACD78200A79071 /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = XCGLogger;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B9670C662BACC68900A79071 /* Project object */;
+}
